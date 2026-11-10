@@ -1,0 +1,26 @@
+{
+  "name": "ELYSIQ Agent",
+  "symbol": "ELYSIQ",
+  "description": "Nietzschean blockchain security agent. Wallet forensics, bundler detection, contract auditing, copy trade verdict. Powered by Claude Fable 5.",
+  "image": "https://elysiq.xyz/mascot.png",
+  "external_url": "https://elysiq.xyz",
+  "attributes": [
+    {
+      "trait_type": "Role",
+      "value": "Nietszchean Security Agent"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "https://elysiq.xyz/mascot.png",
+        "type": "image/png"
+      }
+    ],
+    "category": "image",
+    "links": {
+      "x": "https://x.com/elysiq_agent",
+      "website": "https://elysiq.xyz"
+    }
+  }
+}

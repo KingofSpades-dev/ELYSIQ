@@ -1,0 +1,20 @@
+{
+  "name": "ELYSIQ Security Agent",
+  "description": "Crypto-security scanner that analyzes deployer history, token mechanics, and liquidity to protect traders and agents.",
+  "erc8004": "ELYSIQ_AGENT_IDENTITY_PLACEHOLDER",
+  "version": "1.0.0",
+  "services": {
+    "read_scan": {
+      "endpoint": "/api/scan/read",
+      "method": "POST",
+      "price": "free",
+      "description": "Free read scan providing a simplified safe/risky verdict."
+    },
+    "deep_audit": {
+      "endpoint": "/api/scan/deep",
+      "method": "POST",
+      "price": "Holder tier >= 2 or pay-with-$ELYSIQ",
+      "description": "Gated deep audit analyzing full holder clusters, liquidity depth, and deployer history."
+    }
+  }
+}

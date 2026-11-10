@@ -1,0 +1,41 @@
+openapi: 3.0.0
+info:
+  title: ELYSIQ Security Scanner
+  version: 1.0.0
+  description: "AI-powered crypto security agent endpoints."
+paths:
+  /api/scan/read:
+    post:
+      summary: Free basic security scan.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                mint:
+                  type: string
+      responses:
+        "200":
+          description: "Simplified verdict and top findings."
+  /api/scan/deep:
+    post:
+      summary: Deep security scan (requires Tier 2 or a pay-with-$ELYSIQ receipt).
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                mint:
+                  type: string
+      responses:
+        "200":
+          description: "Full security report."
+        "401":
+          description: "Wallet not connected."
+        "403":
+          description: "Tier 2 or a verified pay-with-$ELYSIQ receipt required."
+

@@ -1,0 +1,50 @@
+{
+  "name": "elysiq",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "node scripts/build-widget.mjs && next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.100.1",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.6.1",
+    "@react-three/postprocessing": "^3.0.4",
+    "@types/three": "^0.184.1",
+    "@upstash/ratelimit": "^2.0.8",
+    "@upstash/redis": "^1.38.0",
+    "@vercel/kv": "^3.0.0",
+    "@wagmi/core": "^3.5.0",
+    "dotenv": "^18.0.10",
+    "framer-motion": "^12.40.0",
+    "lenis": "^1.3.23",
+    "motion": "^12.40.0",
+    "next": "16.2.6",
+    "process": "^0.11.10",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "resend": "^6.12.4",
+    "three": "^0.184.0",
+    "tweetnacl": "^1.0.3",
+    "viem": "^2.52.2"
+  },
+  "devDependencies": {
+    "@openzeppelin/contracts": "^5.0.2",
+    "@types/chai": "^5.2.3",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^20",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "chai": "^6.2.2",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.6",
+    "mocha": "^11.7.6",
+    "solc": "^0.8.28",
+    "ts-node": "^10.9.2",
+    "typescript": "^5",
+    "vite": "^5.4.21"
+  }
+}
